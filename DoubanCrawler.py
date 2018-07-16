@@ -89,7 +89,7 @@ def add(location, dict):
     else:
         dict[location] += 1
 
-with open('movies.csv', 'r') as f:
+with open('movies.csv', 'r') as f: #打开已生成的文件
     reader = csv.reader(f)
     movie_datum = list(reader)
     output = open('output.txt', 'w')
